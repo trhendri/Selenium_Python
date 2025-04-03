@@ -12,22 +12,18 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(2)
 
-# driver.get('https://the-internet.herokuapp.com/basic_auth')
-
-#? Inject username and password inside url
-# https://username:password@website.com
-# https://admin:admin@the-internet.herokuapp.com/basic_auth
-
-driver.get('https://admin:admin@the-internet.herokuapp.com/basic_auth')
+driver.get('https://mail.rediff.com/cgi-bin/login.cgi')
 
 
 
+signin_button = driver.find_element(By.XPATH,'//button[@class="signin-btn"]')
+signin_button.click()
+time.sleep(2)
+wait = WebDriverWait(driver, timeout = 2)
+alert = wait.until(lambda d : d.switch_to.alert)
 
-
-
-
-
-
-
+alert_text= alert.text
+alert.accept()
+print(alert_text)
 
 driver.quit()

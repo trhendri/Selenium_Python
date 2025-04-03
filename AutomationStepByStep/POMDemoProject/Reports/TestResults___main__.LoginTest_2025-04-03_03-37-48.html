@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-04-03 03:37:48</p>
+                <p class='attribute'><strong>Duration: </strong>16.04 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.LoginTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_01_login_valid</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_02_login_invalid_username</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="Username"]"}
+  (Session info: chrome=134.0.6998.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF793A04C25+3179557]
+	(No symbol) [0x00007FF7936688A0]
+	(No symbol) [0x00007FF7934F91CA]
+	(No symbol) [0x00007FF79354FA67]
+	(No symbol) [0x00007FF79354FC9C]
+	(No symbol) [0x00007FF7935A3627]
+	(No symbol) [0x00007FF793577C6F]
+	(No symbol) [0x00007FF7935A02F3]
+	(No symbol) [0x00007FF793577A03]
+	(No symbol) [0x00007FF7935406D0]
+	(No symbol) [0x00007FF793541983]
+	GetHandleVerifier [0x00007FF793A667CD+3579853]
+	GetHandleVerifier [0x00007FF793A7D1D2+3672530]
+	GetHandleVerifier [0x00007FF793A72153+3627347]
+	GetHandleVerifier [0x00007FF7937D092A+868650]
+	(No symbol) [0x00007FF793672FFF]
+	(No symbol) [0x00007FF79366F4A4]
+	(No symbol) [0x00007FF79366F646]
+	(No symbol) [0x00007FF79365EAA9]
+	BaseThreadInitThunk [0x00007FF9EF94E8D7+23]
+	RtlUserThreadStart [0x00007FF9EFE3BF6C+44]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\spasi\Projects\Selenium_Python\AutomationStepByStep\POMDemoProject\Tests\login.py", line 46, in test_02_login_invalid_username
+    login.enter_username("Admin1")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\spasi\Projects\Selenium_Python\AutomationStepByStep\POMDemoProject\Pages\loginPage.py", line 19, in enter_username
+    self.driver.find_element(By.XPATH, self.username_textbox_xpath).clear()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spasi\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spasi\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\spasi\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="Username"]"}
+  (Session info: chrome=134.0.6998.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF793A04C25+3179557]
+	(No symbol) [0x00007FF7936688A0]
+	(No symbol) [0x00007FF7934F91CA]
+	(No symbol) [0x00007FF79354FA67]
+	(No symbol) [0x00007FF79354FC9C]
+	(No symbol) [0x00007FF7935A3627]
+	(No symbol) [0x00007FF793577C6F]
+	(No symbol) [0x00007FF7935A02F3]
+	(No symbol) [0x00007FF793577A03]
+	(No symbol) [0x00007FF7935406D0]
+	(No symbol) [0x00007FF793541983]
+	GetHandleVerifier [0x00007FF793A667CD+3579853]
+	GetHandleVerifier [0x00007FF793A7D1D2+3672530]
+	GetHandleVerifier [0x00007FF793A72153+3627347]
+	GetHandleVerifier [0x00007FF7937D092A+868650]
+	(No symbol) [0x00007FF793672FFF]
+	(No symbol) [0x00007FF79366F4A4]
+	(No symbol) [0x00007FF79366F646]
+	(No symbol) [0x00007FF79365EAA9]
+	BaseThreadInitThunk [0x00007FF9EF94E8D7+23]
+	RtlUserThreadStart [0x00007FF9EFE3BF6C+44]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 16.04 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>
