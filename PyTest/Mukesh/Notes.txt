@@ -1,0 +1,93 @@
+PyTest
+    Framework
+        Couple of classes
+
+    Open Source
+    Parallel mode
+    Suite - Set of testcases
+    Preconditions - Post conditions
+    skip, fail
+
+Selenium test
+    Parallel Mode
+    Suite of tests
+    Simple group of tests
+    Conditions
+    Report
+
+
+pytest
+pip install -u pytest
+
+tests start with
+test_1
+1_test
+
+pytest will run all files from current dir/ subdirec test_*.py or *_test.py
+
+
+In Terminal:
+
+pytest  : runs all tests in folder
+
+
+Flags:
+pytest -rA  : returns extra summary info, about passed tests as well,
+    rA : all test cases
+    rf : failed tests
+    rE : Errors
+    rs : Skipped
+    fE : failed, Error, (default)
+    etc
+
+
+pytest --help or pytest -h   :  returns additional info
+
+pytest --markers    : to see available markers
+pytest --fixtures   : to see available fixtures
+
+
+pytest test_second.py : run specific file
+pytest test_second.py -k login : runs test with keyword "login" in specific file
+pytest -k login     : scans directory/s to run test only with keyword "login"
+
+pytest -v   : 'verbose', additional information
+
+Reports:
+pytest -rA --junitxml="Report1.xml"    : runs all tests and stores in a xml file to store data
+pip install pytest-html : installs html report
+    pytest --html=report.html   : to generate html file report with filename
+Allure
+
+
+Additional test frameworks included:
+unittest - default
+nose
+
+
+Markers
+pytest --markers     : view default markers
+create custom markers:
+    import pytest
+    use @pytest.mark.markername
+    pytest filename -m markername   : runs specific test with marker name
+    pytest filname -m "smoke or regression"     : condition runs either or
+                       "smoke and regression"
+    @pytest.mark.skip   : skips test
+    @pytest.mark.skipif() : condition for skip
+    @pytest.mark.xfail  :
+
+    Registering Markers: to avoid warning messages in terminal
+    create file : pytest.ini
+
+
+Parallel Mode:
+pip install pytest-xdist
+
+pytest -n  NUMCPUS or --numprocesses    : to send tests to multiple CPUs
+
+
+
+
+
+

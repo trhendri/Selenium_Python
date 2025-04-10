@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="9" time="0.094" timestamp="2025-04-10T16:30:17.337726-05:00" hostname="TaliseZen"><testcase classname="test_first" name="test_1" time="0.001" /><testcase classname="test_first" name="test_2" time="0.001" /><testcase classname="test_first" name="test_3" time="0.001"><failure message="AssertionError: Title does not match&#10;assert 'jenkins' in 'Jenkins is CI server'">def test_3():
+        name="jenkins"
+        title="Jenkins is CI server"
+&gt;       assert name in title, "Title does not match" #? Message if failed
+E       AssertionError: Title does not match
+E       assert 'jenkins' in 'Jenkins is CI server'
+
+test_first.py:15: AssertionError</failure></testcase><testcase classname="test_four" name="test_responsecode200" time="0.001" /><testcase classname="test_four" name="test_responsecode400" time="0.001" /><testcase classname="test_second" name="test_login" time="0.001" /><testcase classname="test_second" name="test_checkout" time="0.001" /><testcase classname="test_second" name="test_logout" time="0.001" /><testcase classname="test_three.MyTestCase" name="test_something" time="0.001"><failure message="AssertionError: True != False">self = &lt;test_three.MyTestCase testMethod=test_something&gt;
+
+    def test_something(self):
+&gt;       self.assertEqual(True, False)  # add assertion here
+E       AssertionError: True != False
+
+test_three.py:6: AssertionError</failure></testcase></testsuite></testsuites>
