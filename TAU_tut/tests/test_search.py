@@ -49,7 +49,7 @@ def test_basic_duckduckgo_search(browser): #'browser'from conftest.py
 # Each web page or component under test should have a page object class
 # Page Object methods first and then selenium webdriver calls later
 
-#Pages under test
+#pages under test
 #? -DDG Search Page    - DDG Result Page 
 # 1. Load thepage        1. Get the result link titles
 # 2. search a phrase     2. Get the search input value 

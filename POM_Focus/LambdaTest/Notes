@@ -1,0 +1,20 @@
+Page Object Model
+
+                            Web Pages
+Page Objects                                Test Scripts
+(elements and interactions)
+                       Elements and Interactions
+                       are stored separate from Test Scripts
+
+*************************************************************************
+
+Web Pages                   Login Page                  Home Page
+
+
+Page Objects                LoginPage                    HomePage
+                            (Variables and Methods)        (Variables and Methods)
+
+Test Scripts        Test Script 1           Test Script 2           Test Script 3
+
+
+"If you have WebDriver Apis in your test, You're doing it wrong." - Simon Stewart

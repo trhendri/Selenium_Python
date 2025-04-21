@@ -9,8 +9,8 @@ import unittest
 # import os
 # sys.path.append(os.path.join(os.path.dirname(__file__), "...", "..."))
 
-from AutomationStepByStep.POMDemoProject.Pages.loginPage import LoginPage
-from AutomationStepByStep.POMDemoProject.Pages.homePage import HomePage
+from POM_Focus.auto_step_by_step.POMDemoProject.pages.loginPage import LoginPage
+from POM_Focus.auto_step_by_step.POMDemoProject.pages.homePage import HomePage
 
 import HtmlTestRunner
 
@@ -60,7 +60,7 @@ class LoginTest(unittest.TestCase): #! Define class and name it, (logintest) the
         print('Test Completed')
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="C:/Users/spasi/Projects/Selenium_Python/AutomationStepByStep/POMDemoProject/Reports"))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="C:/Users/spasi/Projects/Selenium_Python/AutomationStepByStep/POMDemoProject/reports"))
 
 
 

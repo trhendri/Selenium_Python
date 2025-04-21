@@ -1,6 +1,5 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from AutomationStepByStep.POMDemoProject.Locators.locators import Locators
+from POM_Focus.auto_step_by_step.POMDemoProject.locators.locators import locators
 
 
 class LoginPage:

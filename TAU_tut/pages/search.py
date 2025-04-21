@@ -9,7 +9,7 @@ class DuckDuckGoSearchPage:
     #URL
     URL = 'https://www.duckduckgo.com'
 
-    #Locators
+    #locators
 
     SEARCH_INPUT = (By.ID, 'search_form_input_homepage')
 

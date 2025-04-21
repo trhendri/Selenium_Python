@@ -35,6 +35,11 @@
           <option name="color" value="#FF9999" />
           <option name="type" value="alt" />
         </CustomTag>
+        <CustomTag>
+          <option name="bold" value="true" />
+          <option name="color" value="#C9D124" />
+          <option name="type" value="n" />
+        </CustomTag>
       </list>
     </option>
   </component>
